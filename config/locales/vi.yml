@@ -5,6 +5,7 @@ vi:
       content_html: '</p>Đây là trang chủ của
         <a href="https://www.railstutorial.org/">Hướng dẫn về Ruby on Rails</a>.
         </p>'
+      sign_up: "Đăng ký ngay!"
     help:
       description: "Trợ giúp"
       content_html: '</p>Nhận trợ giúp về Hướng dẫn Ruby on Rails tại
@@ -30,4 +31,20 @@ vi:
       </p>'
   layouts:
     application:
-      page_title: " Sản phẩm mẫu của Ruby on Rails Tutorial"
+      page_title: " Sản phẩm mẫu của Ruby on Rails"
+    header:
+      home: "Trang chủ"
+      help: "Cần trợ giúp?"
+      log_in: "Đăng nhập"
+    footer:
+      footer_html: '<small>
+        Giáo trình <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+        được viết bởi <a href="http://www.michaelhartl.com/">Michael Hartl</a>
+        </small>'
+      about: "Về chúng tôi"
+      contact: "Liên hệ"
+      news_html: '<a href="http://news.railstutorial.org/">News</a>'
+  users:
+    new:
+      title: "Đăng ký"
+      content: "Đây là trang đăng ký người dùng mới."
