@@ -1,4 +1,9 @@
 vi:
+  controllers:
+    users:
+      create:
+        welcome: "Chào mừng bạn!"
+        find: "Không tìm thấy người dùng, trở về trang chủ!"
   static_pages:
     home:
       description: "Trang chủ"
@@ -47,4 +52,29 @@ vi:
   users:
     new:
       title: "Đăng ký"
-      content: "Đây là trang đăng ký người dùng mới."
+      password: "Mật khẩu"
+      confirm: "Xác nhận lại mật khẩu của bạn"
+      create: "Tạo tài khoản"
+      gender: "Giới tính"
+      year: "Chọn năm sinh"
+      month: "Chọn tháng sinh"
+      day: "Chọn ngày sinh"
+      male: "Nam"
+      female: "Nữ"
+      other: "Khác"
+      date_of_birth: "Ngày sinh"
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              blank: "Vui lòng điền email của bạn vào form!"
+              invalid: "Email này không tồn tại!"
+            name:
+              blank: "Vui lòng điền tên của bạn vào form!"
+            password:
+              blank: "Vui lòng nhập mật khẩu!"
+              too_short: "Mật khẩu quá ngắn!"
+            password_confirmation:
+              confirmation: "Mật khẩu xác nhận không đúng!"
