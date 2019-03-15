@@ -9,7 +9,7 @@ class User < ApplicationRecord
     uniqueness: {case_sensitive: false}
   validates :password, presence: true,
     length: {minimum: Settings.user_valid.min_length_password}
-  validates :gender, presence: true, inclusion: %w(male female else)
+  validates :gender, presence: true, inclusion: %w(male female other)
   validates :date_of_birth,
     timeliness: {on_or_before: ->{Date.current}, type: :date}
   before_save :email_downcase
