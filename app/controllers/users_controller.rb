@@ -3,7 +3,7 @@ class UsersController < ApplicationController
     @user = User.find_by id: params[:id]
     return if @user
     redirect_to root_path
-    flash[:danger] = t("controllers.users.create.find")
+    flash[:danger] = t ".find"
   end
 
   def new
@@ -12,11 +12,13 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
+
     if @user.save
-      flash[:success] = t("controllers.users.create.welcome")
+      log_in @user
+      flash[:success] = t ".welcome"
       redirect_to @user
     else
-      render "new"
+      render :new
     end
   end
 

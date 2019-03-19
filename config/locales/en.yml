@@ -1,9 +1,4 @@
 en:
-  controllers:
-    users:
-      create:
-        welcome: "Greeting traveller!"
-        find: "Can't find the id you are looking for, redirect to Home page!"
   static_pages:
     home:
       description: "Home"
@@ -42,9 +37,17 @@ en:
     application:
       page_title: " Ruby on Rails Sample App"
     header:
+      users: "Users"
+      account_html: '<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              Account <b class="caret"></b></a>'
       home: "Home"
       help: "Need helps?"
       log_in: "Log in"
+      log_out: "Log out"
+      settings: "Settings"
+      profile: "Profile"
+      english: "English"
+      vietnamese: "Vietnamese"
     footer:
       footer_html: '<small>
         The <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
@@ -53,7 +56,20 @@ en:
       about: "About us"
       contact: "Contact"
       news_html: '<a href="http://news.railstutorial.org/">News</a>'
+  sessions:
+    create:
+      messsage: "Invalid email/password combination"
+    form:
+      title: "Log in"
+    new:
+      title: "Log in"
+      sign_up: "Sign up now!"
+      new: "New user? "
   users:
+    create:
+      welcome: "Greeting traveller!"
+    show:
+      find: "Can't find the id you are looking for, redirect to Home page!"
     new:
       title: "Sign up"
       password: "Password"
