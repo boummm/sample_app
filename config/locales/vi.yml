@@ -69,11 +69,12 @@ vi:
       welcome: "Chào mừng bạn!"
     show:
       find: "Không tìm thấy người dùng, trở về trang chủ!"
+      can_not_find_user: "Không tìm thấy người dùng này!"
     new:
       title: "Đăng ký"
       password: "Mật khẩu"
       confirm: "Xác nhận lại mật khẩu của bạn"
-      create: "Tạo tài khoản"
+      button_text: "Tạo tài khoản"
       gender: "Giới tính"
       year: "Chọn năm sinh"
       month: "Chọn tháng sinh"
@@ -82,18 +83,25 @@ vi:
       female: "Nữ"
       other: "Khác"
       date_of_birth: "Ngày sinh"
-  activerecord:
-    errors:
-      models:
-        user:
-          attributes:
-            email:
-              blank: "Vui lòng điền email của bạn vào form!"
-              invalid: "Email này không tồn tại!"
-            name:
-              blank: "Vui lòng điền tên của bạn vào form!"
-            password:
-              blank: "Vui lòng nhập mật khẩu!"
-              too_short: "Mật khẩu quá ngắn!"
-            password_confirmation:
-              confirmation: "Mật khẩu xác nhận không đúng!"
+    edit:
+      can_not_find_user: "Không tìm thấy người dùng này!"
+      title: "Chỉnh sửa người dùng"
+      button_text: "Lưu thay đổi"
+      change_html: '
+      <a href="http://gravatar.com/emails" target="_blank">Thay</a>'
+      update_html: '<h1>Cập nhật thông tin cá nhấn</h1>'
+      confirm: "Xác nhận lại mật khẩu của bạn"
+      need_login: "Vui lòng đăng nhập"
+    update:
+      update: "Đã lưu thay đổi!"
+    index:
+      title: "Tất cả người dùng"
+      all_html: '<h1>Tất cả người dùng</h1>'
+      need_login: "Vui lòng đăng nhập"
+    user:
+      user_confirm: "Bạn có muốn xóa tài khoản này ko?"
+      user_delete: "Xóa"
+    destroy:
+      delete: "Đã xóa người dùng!"
+      fail_delete: "Người dùng đã bị xóa từ trước!"
+      can_not_find_user: "Không tìm thấy người dùng này!"

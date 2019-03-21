@@ -72,11 +72,12 @@ en:
       welcome: "Greeting traveller!"
     show:
       find: "Can't find the id you are looking for, redirect to Home page!"
+      can_not_find_user: "Can not find this user!"
     new:
       title: "Sign up"
       password: "Password"
       confirm: "Confirm your password"
-      create: "Create my account"
+      button_text: "Create my account"
       gender: "Gender"
       year: "Select year"
       month: "Select month"
@@ -85,18 +86,26 @@ en:
       female: "Female"
       other: "Other"
       date_of_birth: "Date of birth"
-  activerecord:
-    errors:
-      models:
-        user:
-          attributes:
-            email:
-              blank: "Please fill in your email!"
-              invalid: "This email is invalid!"
-            name:
-              blank: "Please fill in your name!"
-            password:
-              blank: "Please fill in your password!"
-              too_short: "Your password is too short!"
-            password_confirmation:
-              confirmation: "Password confirmation is not match!"
+    edit:
+      can_not_find_user: "Can not find this user!"
+      title: "Edit user"
+      button_text: "Save changes"
+      change_html: '
+      <a href="http://gravatar.com/emails" target="_blank">Change</a>'
+      update_html: '<h1>Update your profile</h1>'
+      confirm: "Confirm your password"
+      need_login: "Please log in"
+    update:
+      update: "Profile updated!"
+      can_not_find_user: "Can not find this user!"
+    index:
+      title: "All users"
+      all_html: '<h1>All users</h1>'
+      need_login: "Please log in"
+    user:
+      user_confirm: "Do you want to delete this account?"
+      user_delete: "Delete"
+    destroy:
+      delete: "User deleted!"
+      fail_delete: "This user already deleted!"
+      can_not_find_user: "Can not find this user!"
