@@ -1,9 +1,4 @@
 vi:
-  controllers:
-    users:
-      create:
-        welcome: "Chào mừng bạn!"
-        find: "Không tìm thấy người dùng, trở về trang chủ!"
   static_pages:
     home:
       description: "Trang chủ"
@@ -38,9 +33,17 @@ vi:
     application:
       page_title: " Sản phẩm mẫu của Ruby on Rails"
     header:
+      users: "Người dùng"
+      account_html: '<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              Tài khoản <b class="caret"></b></a>'
       home: "Trang chủ"
       help: "Cần trợ giúp?"
       log_in: "Đăng nhập"
+      log_out: "Đăng xuất"
+      settings: "Cài đặt"
+      profile: "Thông tin các nhân"
+      english: "Tiếng Anh"
+      vietnamese: "Tiếng Việt"
     footer:
       footer_html: '<small>
         Giáo trình <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
@@ -49,7 +52,21 @@ vi:
       about: "Về chúng tôi"
       contact: "Liên hệ"
       news_html: '<a href="http://news.railstutorial.org/">News</a>'
+      news_html: '<a href="http://news.railstutorial.org/">News</a>'
+  sessions:
+    create:
+      message: "Sai email hoặc mật khẩu"
+    form:
+      title: "Đăng nhập"
+    new:
+      title: "Đăng nhập"
+      sign_up: "Đăng ký ngay!"
+      new: "Người dùng mới? "
   users:
+    create:
+      welcome: "Chào mừng bạn!"
+    show:
+      find: "Không tìm thấy người dùng, trở về trang chủ!"
     new:
       title: "Đăng ký"
       password: "Mật khẩu"
