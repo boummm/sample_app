@@ -61,6 +61,8 @@ en:
       messsage: "Invalid email/password combination"
     form:
       title: "Log in"
+      remember_me_html: '
+        <span>Remember me on this computer</span>'
     new:
       title: "Log in"
       sign_up: "Sign up now!"

@@ -4,3 +4,4 @@ user_valid:
    min_length_password: 6
 user_gravatar:
   size: 80
+check_box: 1

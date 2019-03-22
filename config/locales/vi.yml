@@ -58,6 +58,8 @@ vi:
       message: "Sai email hoặc mật khẩu"
     form:
       title: "Đăng nhập"
+      remember_me_html: '
+        <span>Lưu đăng nhập</span>'
     new:
       title: "Đăng nhập"
       sign_up: "Đăng ký ngay!"
