@@ -47,6 +47,10 @@ class User < ApplicationRecord
     update remember_digest: nil
   end
 
+  def current_user? user
+    self == user
+  end
+
   private
 
   def email_downcase
