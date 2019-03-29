@@ -1,4 +1,15 @@
 vi:
+
+  picture_size: "Nên chọn ảnh nhỏ hơn 5MB"
+  microposts:
+    create:
+      success: "Tạo micropost thành công!"
+    micropost:
+      you_sure: "Bạn có chắc hem?"
+      delete: "Xóa"
+    destroy:
+      deleted_micropost: "Đã xóa micropost"
+      deleted_micropost_failed: "Xóa Micropost thất bại"
   static_pages:
     home:
       description: "Trang chủ"
@@ -6,6 +17,7 @@ vi:
         <a href="https://www.railstutorial.org/">Hướng dẫn về Ruby on Rails</a>.
         </p>'
       sign_up: "Đăng ký ngay!"
+      feed_html: '<h3>Micropost Feed</h3>'
     help:
       description: "Trợ giúp"
       content_html: '</p>Nhận trợ giúp về Hướng dẫn Ruby on Rails tại
@@ -94,6 +106,7 @@ vi:
       need_login: "Vui lòng đăng nhập"
     update:
       update: "Đã lưu thay đổi!"
+      can_not_find_user: "Không thay đổi được thông tin người dùng!"
     index:
       title: "Tất cả người dùng"
       all_html: '<h1>Tất cả người dùng</h1>'
@@ -105,3 +118,12 @@ vi:
       delete: "Đã xóa người dùng!"
       fail_delete: "Người dùng đã bị xóa từ trước!"
       can_not_find_user: "Không tìm thấy người dùng này!"
+  shared:
+    form:
+      placeholder: "Soạn mới micropost..."
+      post: "Đăng"
+    micropost_form:
+      placeholder: "Soạn mới micropost..."
+      post: "Đăng"
+    user_info:
+      view_my_profile: "Hồ sơ của tôi"
