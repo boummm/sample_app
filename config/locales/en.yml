@@ -79,6 +79,12 @@ en:
       sign_up: "Sign up now!"
       new: "New user? "
   users:
+    show_follow:
+      view_my_profile: "View my profile"
+    unfollow:
+      submit_unfollow: "Unfollow"
+    follow:
+      submit_follow: "Follow"
     create:
       welcome: "Greeting traveller!"
     show:
@@ -120,6 +126,10 @@ en:
       delete: "User deleted!"
       fail_delete: "This user already deleted!"
       can_not_find_user: "Can not find this user!"
+    following:
+      following: "Following"
+    followers:
+      followers: "Followers"
   shared:
     form:
       placeholder: "Compose new micropost..."
@@ -128,4 +138,17 @@ en:
       placeholder: "Compose new micropost..."
       post: "Post"
     user_info:
-      view_my_profile: "view my profile"
+      view_my_profile: "View my profile"
+    stats:
+      following: "%{count} Following"
+      followers: "%{count} Follower"
+  following:
+    show:
+      following: "Following"
+  followers:
+    show:
+      followers: "Follower"
+  relationships:
+    index:
+      following: "Following"
+      followers: "Followers"
