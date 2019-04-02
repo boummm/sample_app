@@ -1,5 +1,9 @@
 vi:
-
+  please: "Vui lòng đăng nhập."
+  hi: "Xin chào"
+  active: "Kích hoạt tài khoản"
+  activated: "Tài khoản đã được kích hoạt!"
+  error_link: "Link kích hoạt không tồn tại"
   picture_size: "Nên chọn ảnh nhỏ hơn 5MB"
   microposts:
     create:
@@ -67,7 +71,8 @@ vi:
       news_html: '<a href="http://news.railstutorial.org/">News</a>'
   sessions:
     create:
-      message: "Sai email hoặc mật khẩu"
+      message: "Tài khoản chưa được kích hoạt, hãy kiểm tra mail của bạn."
+      invalid: "Sai email hoặc mật khẩu"
     form:
       title: "Đăng nhập"
       remember_me_html: '
@@ -85,6 +90,7 @@ vi:
       submit_follow: "Theo dõi"
     create:
       welcome: "Chào mừng bạn!"
+      active: "Tài khoản chưa được kích hoạt, hãy kiểm tra mail của bạn."
     show:
       find: "Không tìm thấy người dùng, trở về trang chủ!"
       can_not_find_user: "Không tìm thấy người dùng này!"
@@ -150,3 +156,9 @@ vi:
     index:
       following: "Đang theo dõi"
       followers: "Được theo dõi"
+  user_mailer:
+    account_activation:
+      sample: "Sample App"
+      content: "Xin chào %{user} <br />Chào mừng bạn đến với Sample App!
+        Hãy bấm vào đường link sau để kích hoạt tài khoản của bạn:"
+      activate: "Kích hoạt"
