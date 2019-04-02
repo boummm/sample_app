@@ -1,4 +1,14 @@
 en:
+  picture_size: "Should be less than 5MB"
+  microposts:
+    create:
+      success: "Micropost created!"
+    micropost:
+      you_sure: "Are You sure?"
+      delete: "delete"
+    destroy:
+      deleted_micropost: "Micropost deleted"
+      deleted_micropost_failed: "Deleted Micropost failed"
   static_pages:
     home:
       description: "Home"
@@ -6,6 +16,7 @@ en:
       <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
       sample application.</p>'
       sign_up: "Sign up now!"
+      feed_html: '<h3>Micropost Feed</h3>'
     help:
       description: "Help"
       content_html: '<p>
@@ -109,3 +120,12 @@ en:
       delete: "User deleted!"
       fail_delete: "This user already deleted!"
       can_not_find_user: "Can not find this user!"
+  shared:
+    form:
+      placeholder: "Compose new micropost..."
+      post: "Post"
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      post: "Post"
+    user_info:
+      view_my_profile: "view my profile"

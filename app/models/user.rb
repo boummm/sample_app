@@ -1,6 +1,8 @@
 class User < ApplicationRecord
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
   attr_reader :remember_token
+  has_many :microposts, dependent: :destroy
+  scope :created_at_desc, ->{order created_at: :desc}
 
   validates :name, presence: true,
     length: {maximum: Settings.user_valid.max_length_name}

@@ -1,16 +1,17 @@
 class UsersController < ApplicationController
-  before_action :find_user, only: [:show, :edit, :destroy]
+  before_action :find_user, only: [:show, :edit, :destroy, :update]
   before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
   before_action :correct_user, only: [:edit, :update]
   before_action :admin_user, only: :destroy
 
   def index
-    @users = User.paginate(page: params[:page])
+    @users = User.paginate(page: params[:page],
+      per_page: Settings.per_page)
   end
 
   def show
-    return if @user
-    flash[:danger] = t ".find"
+    @microposts = @user.microposts.created_at_desc.paginate(page:
+      params[:page], per_page: Settings.per_page)
   end
 
   def new
@@ -55,13 +56,6 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:name, :email, :password,
       :password_confirmation, :gender, :date_of_birth)
-  end
-
-  def logged_in_user
-    return if logged_in?
-    store_location
-    flash[:danger] = t ".need_login"
-    redirect_to login_url
   end
 
   def correct_user
