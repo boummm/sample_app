@@ -77,6 +77,12 @@ vi:
       sign_up: "Đăng ký ngay!"
       new: "Người dùng mới? "
   users:
+    show_follow:
+      view_my_profile: "Hồ sơ của tôi"
+    unfollow:
+      submit_unfollow: "Bỏ theo dõi"
+    follow:
+      submit_follow: "Theo dõi"
     create:
       welcome: "Chào mừng bạn!"
     show:
@@ -118,6 +124,10 @@ vi:
       delete: "Đã xóa người dùng!"
       fail_delete: "Người dùng đã bị xóa từ trước!"
       can_not_find_user: "Không tìm thấy người dùng này!"
+    following:
+      following: "Người đang theo dõi"
+    followers:
+      follower: "Người được theo dõi"
   shared:
     form:
       placeholder: "Soạn mới micropost..."
@@ -127,3 +137,16 @@ vi:
       post: "Đăng"
     user_info:
       view_my_profile: "Hồ sơ của tôi"
+    stats:
+      following: "%{count} Đang theo dõi"
+      followers: "%{count} Được theo dõi"
+  following:
+    show:
+      following: "Đang theo dõi"
+  followers:
+    show:
+      followers: "Được theo dõi"
+  relationships:
+    index:
+      following: "Đang theo dõi"
+      followers: "Được theo dõi"
